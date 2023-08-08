@@ -1,0 +1,65 @@
+/* Reset style */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #5a5a5a;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+/* Begining Header style */
+
+header {
+    width: 95vw;       
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+.Contenedor_Header{    
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Logo {
+    width: 4em;
+}
+
+nav {    
+    display: flex;
+    width: 30em;
+    justify-content: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.Busqueda_Header {
+    width: fit-content;
+}
+
+.Icon_Header {
+    width: 1.5em;
+    filter: invert(32%) sepia(3%) saturate(14%) hue-rotate(356deg) brightness(95%) contrast(77%);
+}
+
+nav ul li{
+    padding: 1.2em;
+    display: inline-block;
+}
+
+ul li{
+    display: inline;
+    padding-right: 15px;
+}
+
+#Actual{
+    color: #e99c2e;
+}
+
+/* Eding Header style */
+/* ------------------ */
+/* Begining slider style */
+
