@@ -22,55 +22,105 @@
                 </nav>
                 <ul class="Busqueda_Header">
                     <li>
-                        <img src="Icons/Lupa.svg" alt="lupa de busqueda" class="Icon_Header">
+                        <img src="Icons/Lupa.svg" alt="lupa de busqueda" class="Icon">
                     </li>
                     <li>
-                        <img src="Icons/Configuracion.svg" alt="Rueda de configuracion" class="Icon_Header">
+                        <img src="Icons/Configuracion.svg" alt="Rueda de configuracion" class="Icon">
                     </li>
                     <li>
-                        <img src="Icons/CarroDeCompra.svg" alt="Carrito de compra" class="Icon_Header">
+                        <img src="Icons/CarroDeCompra.svg" alt="Carrito de compra" class="Icon">
                     </li>
                 </ul>
             </div>
         </header>
         <main>
-            <article class="Slider">
-                <section>
-                    <h4>Great Design Collection</h4>
-                    <h3>Mapple Wood Accent Chair</h3>
-                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
-                    <p>$precio</p><p><del>$precio</del></p>
-                    <img src="images/slider/slider1.png" alt="mueble slider">
-                </section>
-                <section>
-                    <h4>Great Design Collection</h4>
-                    <h3>Cloth Covered Accent Chair</h3>
-                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
-                    <p>$precio</p><p><del>$precio</del></p>
-                    <img src="images/slider/slider2.png" alt="mueble slider">
-                </section>
-                <section>
-                    <h4>Great Design Collection</h4>
-                    <h3>Valvet Accent Arm Chair</h3>
-                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
-                    <p>$precio</p><p><del>$precio</del></p>
-                    <img src="images/slider/slider3.png" alt="mueble slider">
-                </section>
+            <article class="Slider__wrapper">
+                <div class="Slider">
+                    <section id="Slider-1">
+                        <div class="Slider__section-div">
+                            <h4>Great Design Collection</h4>
+                            <h3>Mapple Wood Accent Chair</h3>
+                            <p class="Slider__section-div-p">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+                            <p class="Precio Slider__section-div-p">$precio</p><p class="Slider__section-div-p"><del>$precio</del></p>
+    
+                            <div class="Button__Container">
+                                <Button class="Button__Container-button">
+                                    <img src="Icons/Add.svg" class="Icon">
+                                    Add to cart
+                                </Button>
+                                <Button class="Button-White_Background Button__Container-button">More info</Button>
+                            </div>
+                        </div>
+                        <div class="Slider__div-img_Container">
+                            <img src="images/slider/slider1.png" alt="mueble slider">
+                        </div>
+                    </section>
+                    <section id="Slider-2">
+                        <div class="Slider__section-div">
+                            <div>
+                                <h4>Great Design Collection</h4>
+                                <h3>Cloth Covered Accent Chair</h3>
+                                <p class="Slider__section-div-p">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+                                <p class="Precio Slider__section-div-p">$precio</p><p class="Slider__section-div-p"><del>$precio</del></p>  
+                            </div>                      
+    
+                            <div class="Button__Container">                            
+                                <Button class="Button__Container-button">
+                                    <img src="Icons/Add.svg" class="Icon">
+                                    Add to cart
+                                </Button>
+                                <Button class="Button-White_Background Button__Container-button">More info</Button>
+                            </div>
+                        </div>                    
+                        <div class="Slider__div-img_Container">
+                            <img src="images/slider/slider2.png" alt="mueble slider">
+                        </div>                    
+                    </section>
+                    <section id="Slider-3">
+                        <div class="Slider__section-div">
+                            <div>
+                                <h4>Great Design Collection</h4>
+                                <h3>Valvet Accent Arm Chair</h3>
+                                <p class="Slider__section-div-p">Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip</p>
+                                <p class="Precio Slider__section-div-p">$precio</p><p class="Slider__section-div-p"><del>$precio</del></p>
+                            </div>
+                            <div class="Button__Container">                            
+                                <Button class="Button__Container-button">
+                                    <img src="Icons/Add.svg" class="Icon">
+                                    Add to cart
+                                </Button>
+                                <Button class="Button-White_Background Button__Container-button">More info</Button>
+                            </div>
+                        </div>
+                        <div class="Slider__div-img_Container">
+                            <img src="images/slider/slider3.png" alt="mueble slider">
+                        </div>                    
+                    </section>
+                </div>
+                <div class="Slider-nav">
+                    <a href="#Slider-1"></a>
+                    <a href="#Slider-2"></a>
+                    <a href="#Slider-3"></a>
+                </div>
             </article>
-            <article>
-                <section>
+            <article id="Popular_Products">
+                <section class="Popular_Products__article-section">
                     <img src="images/populer-products/p1.png" alt="Mueble packages-price">
                     <h3>Arm Chair</h3>
                     <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut</p>
                 </section>
-                <section>
-                    <img src="images/populer-products/p2.png" alt="Silla bomnita">
-                    <h3>Arm Chair</h3>
-                    <p>Edit Ut Perspiciatis Unde Omnis Iste Natusina Error Sit Voluptatem Accusantiun Doloret Mque Laudantium, Totam Rem aperiam</p>
-                    <p>Sales Start From <bold>$99.00</bold></p>
-                    <button>Discover More</button>
+                <section class="Popular_Products__article-section">
+                    <div class="Popular_Products__article-section-div">
+                        <img src="images/populer-products/p2.png" alt="Silla bomnita">
+                        <div>
+                            <h3>Arm Chair</h3>
+                            <p>Edit Ut Perspiciatis Unde Omnis Iste Natusina Error Sit Voluptatem Accusantiun Doloret Mque Laudantium, Totam Rem aperiam</p>
+                            <p class="Resaltar">Sales Start From <bold>$99.00</bold></p>
+                            <button>Discover More</button>
+                        </div>
+                    </div>
                 </section>
-                <section>
+                <section class="Popular_Products__article-section">
                     <img src="images/populer-products/p3.png" alt="hanging lamp">
                     <h3>Hanging Lamp</h3>
                     <p>Nemo enim ipsam voluptem quia volu ptas sit asperna aut odit aut fugit</p>
@@ -122,7 +172,7 @@
             <article>
                 <img src="images/collection/sofa-collection-banner.jpg" alt="Fondo decorativo con muebles">
                 <h4>Unlimited Daining Table Collection</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ut corporis, deserunt magni iste ipsam consequatur harum voluptas doloribus porro quasi distinctio voluptates aperiam iure consectetur nostrum hic expedita. Velit!</p>
+                <p class="Slider__section-div-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ut corporis, deserunt magni iste ipsam consequatur harum voluptas doloribus porro quasi distinctio voluptates aperiam iure consectetur nostrum hic expedita. Velit!</p>
                 <p>String From <b>$ 299</b></p>
                 <button>View More</button>
             </article>
@@ -131,23 +181,23 @@
                 <section>
                     <img src="images/features/f1.jpg">
                     <h3>Designed Sofa</h3>
-                    <p>$precio</p>
-                </section>
+                    <p class="Precio Slider__section-div-p">$precio</p>
+  class="Slider__section-div-p"               </section>
                 <section>
                     <img src="images/features/f2.jpg">
                     <h3>Designed Sofa</h3>
-                    <p>$precio</p>
-                </section>
+                    <p class="Precio Slider__section-div-p">$precio</p>
+  class="Slider__section-div-p"               </section>
                 <section>
                     <img src="images/features/f3.jpg">
                     <h3>Designed Sofa</h3>
-                    <p>$precio</p>
-                </section>
+                    <p class="Precio Slider__section-div-p">$precio</p>
+  class="Slider__section-div-p"               </section>
                 <section>
                     <img src="images/features/f4.jpg">
                     <h3>Designed Sofa</h3>
-                    <p>$precio</p>
-                </section>
+                    <p class="Precio Slider__section-div-p">$precio</p>
+  class="Slider__section-div-p"               </section>
             </article>
             <article>
                 <h2>Latest Blog</h2>
