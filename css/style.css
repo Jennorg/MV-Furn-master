@@ -34,6 +34,8 @@ header {
     z-index: 99;
 }
 
+
+
 #Logo {
     padding-left: 20px;
     width: 4em;
@@ -44,7 +46,16 @@ nav {
     display: flex;
     width: 30em;
     font-weight: bold;
-    white-space: nowrap;
+    white-space: nowrap;        
+}
+
+nav * {
+    color: rgb(110, 110, 110);    
+}
+
+nav *:hover {
+    color: #e99c2e;
+    transition: ease .5s;
 }
 
 .Busqueda_Header {
@@ -53,6 +64,10 @@ nav {
     flex-grow: 1;
     justify-content: end;
     margin-right: 50px;
+}
+
+.Busqueda_Header *:hover {
+    filter: invert(73%) sepia(84%) saturate(1973%) hue-rotate(342deg) brightness(99%) contrast(84%);
 }
 
 nav ul li{
@@ -143,6 +158,18 @@ del {
     font-weight: bold;
 }
 
+.Button__Container-button:hover {
+    background-color: inherit;
+    color: #e99c2e;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.Button__Container-button:hover img {
+    filter: invert(73%) sepia(84%) saturate(1973%) hue-rotate(342deg) brightness(99%) contrast(84%);
+    transition: ease .5s;    
+}
+
 .Button__Container img {
     filter: invert();
     height: fit-content;
@@ -151,6 +178,12 @@ del {
 .Button-White_Background {
     background-color: inherit;
     color: #e99c2e;    
+    border: 1px solid #f5f5f5;
+}
+
+.Button-White_Background:hover {
+    border: 1px solid #e99c2e;
+    transition: linear .5s;
 }
 
     /* Slider*/
@@ -218,6 +251,19 @@ del {
     padding-bottom: 0;
 }
 
+.Popular_Products__article-section:hover h3 {
+    color: #e99c2e;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.Popular_Products__article-section:nth-child(2):hover .Popular_Products__article-section-div div button{
+    background-color: #555;
+    color: #fff;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
 .Popular_Products__article-section:last-child {
     padding-bottom: 1em;
     padding-top: 0;
@@ -247,10 +293,6 @@ del {
 
 .Popular_Products__article-section-div div > img {
     height: min-content;
-}
-
-.Popular_Products__article-section-div h3{
-    color: #333;
 }
 
 .Popular_Products__article-section-div {
@@ -290,7 +332,6 @@ del {
 /*Ending Popular Products*/
 /*-------------------------*/
 /*Begining New Arrivals*/
-
 .New-Arrivals > h2 {
     text-align: center;
     margin: 2em;
@@ -313,14 +354,44 @@ del {
     grid-template-rows: 2fr 1fr;
 }
 
+.New-Arrivals__grid-wapper > section::before {
+    content: ".";
+    width: 95%;
+    height: 75%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateX(-50%); 
+    transform: translateY(0%);
+    background-color: #555;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0; 
+    z-index: 88;
+    transition: opacity 0.5s ease-out;
+}
+
+.New-Arrivals__grid-wapper > section:hover::before {
+    opacity: .3; 
+}
+
+.New-Arrivals__grid-wapper > section:hover img{
+    transform: scale(1.2);
+    transition: ease .5s;
+}
+
 .New-Arrivals__grid-wapper-text {
     background-color: #fff;    
     position: absolute;
     width: 100%;
     padding: 1em;
     bottom: 0;
-
     font-size: small;
+}
+
+.New-Arrivals__grid-wapper > section:hover .New-Arrivals__grid-wapper-text h3 a {
+    color: #e99c2e;
+    transition: ease .5s;
 }
 
 
@@ -401,6 +472,35 @@ del {
     margin-bottom: 1em;
 }
 
+.Latest-Blog__div > section {
+    position: relative;
+}
+
+.Latest-Blog__div > section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ".";
+    background-color: #000;
+    z-index: 88;
+    opacity: 1;
+    width: 98%;
+    height: 58%;
+    opacity: 0;
+    clip-path: circle(0% at center);
+    transition: clip-path ease 1s;
+}
+
+.Latest-Blog__div > section:hover::before {
+    opacity: .3;
+    clip-path: circle(100% at center);
+}
+
+.Latest-Blog__div > section:hover h3 {
+    color: #e99c2e;
+    transition: .5s;
+}
+
 .Date {
     color: #aaa;
     font-size: small;
@@ -456,7 +556,30 @@ footer > * > *{
     margin-bottom: 1em;
 }
 
-        
-        
+footer ul li a {
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+footer ul li:hover a {
+    color: #e99c2e;
+    transform: translateX(8%);
+}
+
+footer ul li a:not(:hover) {
+    transition: transform 0.5s ease, color 0.5s ease; /* Transición inversa para transform y color */
+    transform: translateX(0);
+    color: inherit;
+}
+
+footer input {
+    border: none;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+footer input:focus {
+    outline: none;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
         
         
