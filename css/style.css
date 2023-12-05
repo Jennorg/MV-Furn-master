@@ -400,8 +400,9 @@ del {
 /*Begining Sofa Colecction*/
 
 .Sofa-Collection {
-    background-image: url(/images/collection/sofa-collection-banner.jpg);
+    background-image: url(https://i.postimg.cc/1znfttCC/sofa-collection-banner.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 35em;
     display: flex;
     align-items: center;
@@ -424,7 +425,7 @@ del {
 .Sofa-Collection__Fondo {
     background-color: rgba(50, 50, 50, .9);
     position: absolute;
-    width: 35%;
+    width: 100vw;
     height: 35em;
 }
 
